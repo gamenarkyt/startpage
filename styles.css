@@ -58,35 +58,24 @@ body {
 	flex-wrap: wrap;
 	gap: 0.25rem;
 }
-/* @media (min-width: 300px) {
-	.bookmarks {
-		display: grid;
-		grid-template-columns: repeat(2, 1fr);
-	}
-}
-@media (min-width: 400px) and (max-width: 600px) {
-	.bookmarks {
-		display: flex;
-	}
-} */
 
 .bookmark {
 	position: relative;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	width: 5rem;
-	height: 5rem;
+	width: 6rem;
+	height: 6rem;
 	padding: 0.25rem;
 	background-color: var(--background-2);
 	border-radius: 0.5rem;
 
+	cursor: pointer;
 	transition: all 0.35s;
 }
 
 .bookmark:hover {
-	width: 5.5rem;
-	height: 5.5rem;
+	filter: brightness(120%);
 }
 .bookmark::before {
 	position: absolute;
